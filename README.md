@@ -469,7 +469,7 @@ for (let i = 0; i < programmerOutput.length; i++) {
   totalOutput += programmerOutput[i].linesOfCode;
 }
 ```
-:white_check_space:
+:white_check_mark:
 ```javascript
 const programmerOutput = [
   {
