@@ -502,7 +502,7 @@ if (fsm.state === "fetching" && isEmpty(listNode)) {
   // ...
 }
 ```
-:white_check_space:
+:white_check_mark:
 ```javascript
 function shouldShowSpinner(fsm, listNode) {
   return fsm.state === "fetching" && isEmpty(listNode);
