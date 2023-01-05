@@ -7,6 +7,7 @@ Choose only a single naming convention to be used in the project. Always check f
  - Use upper camel case for component names (React). 
  - Use camel case for variable and function's names. 
  - Use dash case for route name.  
+ 
 | Formatting | Name             |
 |------------|------------------|
 | TWO_WORDS  | Constant case    |
