@@ -15,7 +15,7 @@ Choose only a single naming convention to be used in the project. Always check f
 | TwoWords   | Upper Camel case |
 | two-words  | Dash case        |
 #### Use const and let instead of var
-Using var provides variable hoisting which is error-prone. Using const and let provides block scope that allows us to write clean and less error-prone code.
+Using `var` provides variable hoisting which is error-prone. Using `const` and `let` provides block scope that allows us to write clean and less error-prone code.
 
 #### Give your variables meaningful and pronounceable names
 Have you ever felt guilty of taking a shortcut to name your variables x , y , z  & i or naming your functions func1(), temp(), etc. Did you have a hard time understanding that same piece of code when you came back to it a few weeks later? Did you have to supplement that piece of code with inline code commentary? Please don’t do it — there is a better approach — self-documenting code.
@@ -109,7 +109,7 @@ function paintCar(car, color) {
 }
 ```
 #### Use default parameters instead of short circuiting or conditionals
-Default parameters are often cleaner than short circuiting. Be aware that if you use them, your function will only provide default values for undefined arguments. Other "falsy" values such as '', "", false, null, 0, and NaN, will not be replaced by a default value.  
+Default parameters are often cleaner than short circuiting. Be aware that if you use them, your function will only provide default values for undefined arguments. Other "falsy" values such as '', "", false, null, 0, and NaN, will not be replaced by a default value.
   
 :x:
 ```javascript
@@ -138,6 +138,31 @@ if ( speed > 50 ) {
 let SPEED_LIMIT = 50
 if ( speed > SPEED_LIMIT ) {
   // body of if statement
+}
+```
+#### Checking null and undefined
+ECMAScript2020 has new features like null coalescing operator (??) and optional chaining operator (?) to check null or undefined values.  
+  
+:x:
+```javascript
+const result = (a !== null && a !== undefined) ? a : b;
+
+alert(result)
+
+const arr=[]
+
+if(arr && arr.length>10){
+	console.log('>10')
+}
+```
+:white_check_mark:
+```javascript
+alert(a??b)
+
+const arr=[]
+
+if(arr?.length>10){
+	console.log('>10')
 }
 ```
 ### 2.  Functions
