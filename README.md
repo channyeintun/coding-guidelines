@@ -2,8 +2,11 @@
 
 ### 1. Variables
 #### Naming convention should be consistent
-Choose only a single naming convention to be used in the project. Use constant case for constants. Use upper camel case for component names (React). Use camel case for variable and function's names. Use dash case for route name.  
-Check for typos.
+Choose only a single naming convention to be used in the project. Always check for typos. 
+ - Use constant case for constants. 
+ - Use upper camel case for component names (React). 
+ - Use camel case for variable and function's names. 
+ - Use dash case for route name.  
 | Formatting | Name             |
 |------------|------------------|
 | TWO_WORDS  | Constant case    |
