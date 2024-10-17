@@ -679,7 +679,7 @@ get("https://en.wikipedia.org/wiki/Robert_Cecil_Martin")
     console.error(err);
   });
 ```
-:white_mark_check:
+:white_check_mark:
 ```javascript
 import { get } from "request-promise";
 import { writeFile } from "fs-extra";
